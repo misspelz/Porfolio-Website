@@ -7,7 +7,7 @@ type Props = {};
 
 const Container = (props: Props) => {
   return (
-    <div className="lg:pt-16 pt-4 relative w-10/12 mx-auto">
+    <div className="pt-4 relative w-10/12 mx-auto">
       <div className="md:flex items-center justify-between flex-row-reverse">
         <div className=" flex justify-start lg:justify-center items-end max-md:pt-4 md:w-[50%]">
           <div className="relative">
@@ -26,10 +26,13 @@ const Container = (props: Props) => {
           </p>
 
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
-          As a <span className="text-[#f7a025]">Front End Developer</span>, I am excited about the prospect of collaborating on new ventures and contributing my expertise to innovative projects.
+          As a <span className="text-[#f7a025]">Front End Developer</span>, my approach to website development is to create a website that strengthens your company's brand while ensuring ease of use and simplicity for your audience.
+          </p>
+          <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
+    I am excited about the prospect of collaborating on new ventures and contributing my expertise to innovative projects.
           </p>
 
-          <div className="flex items-center mt-6 md:mt-10">
+          <div className="flex items-center mt-6">
             <ul className="flex items-center space-x-2 sm:space-x-5 mr-6 my-4 ">
               <li>
                 <a
