@@ -50,7 +50,7 @@ const Navbar = (props: Props) => {
               showNav ? "max-sm:translate-x-0" : "max-sm:-translate-x-40"
             }`}
           >
-            <a href="#contact" className="px-2 sm:text-xl">
+            <a href="wa.link/0wqvvf" target="_blank" className="px-2 sm:text-xl">
               Contact
             </a>
           </li>

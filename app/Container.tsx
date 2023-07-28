@@ -1,23 +1,47 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { AiOutlineTwitter, AiOutlineGithub } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
+import Image from "next/image";
+import myimg from "../public/assets/Adetoye_A._Pelumi-removebg-preview.png";
 
 type Props = {};
 
 const Container = (props: Props) => {
+  const [color, setColor] = useState("red");
+  const [text, setText] = useState("LIVE!");
+
+  // Timer function
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setColor((prevColor) => (prevColor === "#f7a025" ? "#7657a9" : "#f7a025"));
+      setText((prevText) =>
+        prevText === "Front End Developer!"
+          ? "Front End Developer"
+          : "Front End Developer"
+      );
+    }, 1000);
+
+    // Clear the timer when the component unmounts
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
-    <div className="pt-4 relative w-10/12 mx-auto">
+    <div className="pt-4 relative w-10/12 max-w-[1200px] mx-auto">
       <div className="md:flex items-center justify-between flex-row-reverse">
         <div className=" flex justify-start lg:justify-center items-end max-md:pt-4 md:w-[50%]">
           <div className="relative">
-            <img
+            <Image
               className="h-[500px] transform -scale-x-100"
-              
-              src="https://res.cloudinary.com/dzvdkjmm7/image/upload/v1689978270/Adetoye_A._Pelumi-removebg-preview_jnvigw.png"
+              //  width={500}
+              //  height={500}
+              src={myimg}
               alt="my picture"
             />
-            <div className="hidden md:block lg:w-[350px] lg:h-[350px] overflow-hidden z-[-1] top-[5%] lg:top-0 left-[5%] lg:left-[-20px] rounded-full bg-gradient-to-r from-blue-600 via-red-500 to-yellow-400 absolute"></div>
+            <div className="hidden md:block lg:w-[350px] lg:h-[350px] overflow-hidden z-[-1] top-[5%] lg:top-0 left-[5%] lg:left-[-5px] rounded-full bg-gradient-to-r from-blue-600 via-red-500 to-yellow-400 absolute"></div>
           </div>
         </div>
         <div className="md:w-[50%] p-4 pl-0 mt-5 sm:mt-20">
@@ -26,10 +50,14 @@ const Container = (props: Props) => {
           </p>
 
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
-          As a <span className="text-[#f7a025]">Front End Developer</span>, my approach to website development is to create a website that strengthens your company's brand while ensuring ease of use and simplicity for your audience.
+            As a <span style={{ color: color }}>{text}</span>, my approach to
+            website development is to create a website that strengthens your
+            company's brand while ensuring ease of use and simplicity for your
+            audience.
           </p>
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
-    I am excited about the prospect of collaborating on new ventures and contributing my expertise to innovative projects.
+            I am excited about the prospect of collaborating on new ventures and
+            contributing my expertise to innovative projects.
           </p>
 
           <div className="flex items-center mt-6">
@@ -67,12 +95,12 @@ const Container = (props: Props) => {
                 </a>
               </li>
             </ul>
-            {/* <a
+            <a
              href="mailto:pelumiiadetoye@gmail.com"
               className="px-4 py-[5px] whitespace-nowrap transition ease-in duration-150 bg-neutral-700 hover:bg-neutral-600 rounded-2xl border-[0.5px] border-[#363636]"
             >
               Email me
-            </a> */}
+            </a>
           </div>
         </div>
       </div>
