@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
             }`}
           >
             <a
-              href="https://drive.google.com/file/d/1hCTkFpva9maw2ORNiGHLkbNrPSd6WuRP/view"
+              href="https://drive.google.com/file/d/1UihkiLUZpJZpnNNNDLfBoA_qqySfKnBO/view"
               className="px-2 sm:text-xl"
               target="_blank"
             >
