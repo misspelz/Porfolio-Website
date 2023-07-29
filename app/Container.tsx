@@ -10,7 +10,7 @@ type Props = {};
 
 const Container = (props: Props) => {
   const [color, setColor] = useState("red");
-  const [text, setText] = useState("LIVE!");
+  const [text, setText] = useState("Front End Developer");
 
   // Timer function
   useEffect(() => {
@@ -52,7 +52,7 @@ const Container = (props: Props) => {
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
             As a <span style={{ color: color }}>{text}</span>, my approach to
             website development is to create a website that strengthens your
-            company's brand while ensuring ease of use and simplicity for your
+            company&apos;s brand while ensuring ease of use and simplicity for your
             audience.
           </p>
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
@@ -64,7 +64,7 @@ const Container = (props: Props) => {
             <ul className="flex items-center space-x-2 sm:space-x-5 mr-6 my-4 ">
               <li>
                 <a
-                  href="/"
+                  href="https://twitter.com/Dev_Pelz"
                   className="hover:opacity-100 opacity-75 transition ease-in duration-150"
                 >
                   <AiOutlineTwitter size={24} />
