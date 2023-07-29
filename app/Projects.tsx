@@ -1,11 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { AiOutlineGithub } from "react-icons/ai";
 import Image from "next/image";
 import blogwebimg from "../public/assets/blogwebimg.jpeg";
 import img_gallery from "../public/assets/img_gallery.jpeg";
 import comform from "../public/assets/comform.jpeg";
+import portfolio from "../public/assets/portfolio.jpeg";
 
 type Props = {};
 
@@ -22,8 +23,6 @@ const Projects = (props: Props) => {
       <div className="mt-20 md:w-9/12 mx-auto ">
         <Image
           className="rounded-xl opacity-90 hover:opacity-100"
-          // width={200}
-          // height={200}
           src={img_gallery}
           alt="image_gallery"
         />
@@ -55,8 +54,6 @@ const Projects = (props: Props) => {
         <Image
           className="rounded-xl opacity-90 hover:opacity-100"
           src={blogwebimg}
-          // width={200}
-          // height={200}
           alt="image"
         />
 
@@ -82,13 +79,7 @@ const Projects = (props: Props) => {
         </div>
       </div>
       <div className="mt-20 md:w-9/12 mx-auto ">
-        <Image
-          className="rounded-xl opacity-90"
-          src={comform}
-          alt="image"
-          // width={200}
-          // height={200}
-        />
+        <Image className="rounded-xl opacity-90" src={comform} alt="image" />
         <div className="my-10 sm:w-10/12 mx-auto">
           <h1 className="text-2xl font-bold mb-4">Customer Complaint Form</h1>
           <div className="text-neutral-300">
@@ -101,6 +92,26 @@ const Projects = (props: Props) => {
           <div className="mt-6 inline-block">
             <a
               href="https://customercomplaintform.netlify.app/"
+              className="flex items-center px-4 py-1 border-[0.5px] border-slate-500 rounded-3xl bg-neutral-800 hover:bg-neutral-700"
+            >
+              Explore <BsArrowUpRight size={14} className="ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 md:w-9/12 mx-auto ">
+        <Image className="rounded-xl opacity-90" src={portfolio} alt="image" />
+        <div className="my-10 sm:w-10/12 mx-auto">
+          <h1 className="text-2xl font-bold mb-4">Portfolio Website</h1>
+          <div className="text-neutral-300">
+            <h1>
+              The website was built with HTML5 and JavaScript. It utilizes CSS3
+              for styling and Animate on Scroll (AOS) for animations.
+            </h1>
+          </div>
+          <div className="mt-6 inline-block">
+            <a
+              href="https://portfolio-oluwapelumi.netlify.app/"
               className="flex items-center px-4 py-1 border-[0.5px] border-slate-500 rounded-3xl bg-neutral-800 hover:bg-neutral-700"
             >
               Explore <BsArrowUpRight size={14} className="ml-2" />

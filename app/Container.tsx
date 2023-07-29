@@ -36,8 +36,6 @@ const Container = (props: Props) => {
           <div className="relative">
             <Image
               className="h-[500px] transform -scale-x-100"
-              //  width={500}
-              //  height={500}
               src={myimg}
               alt="my picture"
             />
