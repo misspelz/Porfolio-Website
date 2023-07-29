@@ -29,7 +29,7 @@ const Navbar = (props: Props) => {
             }`}
           >
             <a
-              href="https://drive.google.com/file/d/1T3gwZUTQWq9DwJGfWF4jSEPQj1fX7w5w/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1hCTkFpva9maw2ORNiGHLkbNrPSd6WuRP/view"
               className="px-2 sm:text-xl"
               target="_blank"
             >
@@ -50,7 +50,11 @@ const Navbar = (props: Props) => {
               showNav ? "max-sm:translate-x-0" : "max-sm:-translate-x-40"
             }`}
           >
-            <a href="wa.link/0wqvvf" target="_blank" className="px-2 sm:text-xl">
+            <a
+              href="wa.link/0wqvvf"
+              target="_blank"
+              className="px-2 sm:text-xl"
+            >
               Contact
             </a>
           </li>
