@@ -5,6 +5,8 @@ import { AiOutlineGithub } from "react-icons/ai";
 import Image from "next/image";
 import blogwebimg from "../public/assets/blogwebimg.jpeg";
 import img_gallery from "../public/assets/img_gallery.jpeg";
+import petabyte from "../public/assets/pesports.jpg";
+import stepper from "../public/assets/edus.jpg";
 import comform from "../public/assets/comform.jpeg";
 import portfolio from "../public/assets/portfolio.jpeg";
 
@@ -17,9 +19,70 @@ const Projects = (props: Props) => {
       <p className="pt-6 text-neutral-300 max-w-[1200px] mx-auto">
         I have gained experience in developing a variety of websites, ranging
         from one-page landing pages to multi-page applications. Here are some
-        projects, showcasing my work in the field of front end development.
+        projects, showcasing my work in the field
       </p>
 
+      <div className="mt-20 md:w-9/12 mx-auto ">
+        <Image
+          className="rounded-xl opacity-90 hover:opacity-100"
+          src={stepper}
+          alt="image_gallery"
+        />
+
+        <div className="my-10 sm:w-10/12 mx-auto">
+          <h1 className="text-2xl font-bold mb-4">Request Stipend Milti-step Form</h1>
+          <div className="text-neutral-300">
+            <h1 className="mt-4">
+              {" "}
+              I developed a stepper component for a Request Stipend Feature for users to request a stipend, streamlining the application process for users. The stepper guided users through a multi-step form, ensuring a seamless and error-free experience.
+              
+              Implemented the component using HTML, CSS, and JavaScript (React.js).
+            </h1>
+            <h1 className="mt-4">
+              {" "}
+              I collaborated with fellow developers to create the Edustipend Home Page where I developed the How It Works, Our Beneficiaries and Take Off Burden Sections.
+            </h1>
+          </div>
+
+          <div className="mt-6 inline-block">
+            <a
+              href="https://edustipend.org"
+              target="_blank"
+              className="flex items-center px-4 py-1 border-[0.5px] border-slate-500 rounded-3xl bg-neutral-800 hover:bg-neutral-700"
+            >
+              Explore <BsArrowUpRight size={14} className="ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 md:w-9/12 mx-auto ">
+        <Image
+          className="rounded-xl opacity-90 hover:opacity-100"
+          src={petabyte}
+          alt="image_gallery"
+        />
+
+        <div className="my-10 sm:w-10/12 mx-auto">
+          <h1 className="text-2xl font-bold mb-4">Petabye ESports</h1>
+          <div className="text-neutral-300">
+            <h1 className="mt-4">
+              {" "}
+              This platform is being developed with the MERN Stack where I focus
+              on React.js for building the User Interface.
+            </h1>
+          </div>
+
+          <div className="mt-6 inline-block">
+            <a
+              href="https://pesports.gg"
+              target="_blank"
+              className="flex items-center px-4 py-1 border-[0.5px] border-slate-500 rounded-3xl bg-neutral-800 hover:bg-neutral-700"
+            >
+              Explore <BsArrowUpRight size={14} className="ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
       <div className="mt-20 md:w-9/12 mx-auto ">
         <Image
           className="rounded-xl opacity-90 hover:opacity-100"
