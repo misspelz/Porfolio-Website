@@ -5,6 +5,7 @@ import { GrInstagram } from "react-icons/gr";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import myimg from "../public/assets/Adetoye_A._Pelumi-removebg-preview.png";
+import Link from "next/link";
 
 type Props = {};
 
@@ -15,7 +16,9 @@ const Container = (props: Props) => {
   // Timer function
   useEffect(() => {
     const timer = setInterval(() => {
-      setColor((prevColor) => (prevColor === "#f7a025" ? "#7657a9" : "#f7a025"));
+      setColor((prevColor) =>
+        prevColor === "#f7a025" ? "#7657a9" : "#f7a025"
+      );
       setText((prevText) =>
         prevText === "Front End Developer!"
           ? "Front End Developer"
@@ -43,15 +46,16 @@ const Container = (props: Props) => {
           </div>
         </div>
         <div className="md:w-[50%] p-4 pl-0 mt-5 sm:mt-20">
-          <p className="text-xl sm:text-2xl  md:text-xl lg:text-2xl xl:text-3xl">
-            Hi, call me Pelz
-          </p>
-
+          {/* <Link href="/newpage"> */}
+            <p className="text-xl sm:text-2xl  md:text-xl lg:text-2xl xl:text-3xl">
+              Hi, call me Pelz
+            </p>
+          {/* </Link> */}
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
             As a <span style={{ color: color }}>{text}</span>, my approach to
             website development is to create a website that strengthens your
-            company&apos;s brand while ensuring ease of use and simplicity for your
-            audience.
+            company&apos;s brand while ensuring ease of use and simplicity for
+            your audience.
           </p>
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
             I am excited about the prospect of collaborating on new ventures and
@@ -94,7 +98,7 @@ const Container = (props: Props) => {
               </li>
             </ul>
             <a
-             href="mailto:pelumiiadetoye@gmail.com"
+              href="mailto:pelumiiadetoye@gmail.com"
               className="px-4 py-[5px] whitespace-nowrap transition ease-in duration-150 bg-neutral-700 hover:bg-neutral-600 rounded-2xl border-[0.5px] border-[#363636]"
             >
               Email me

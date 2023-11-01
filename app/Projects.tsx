@@ -7,6 +7,7 @@ import blogwebimg from "../public/assets/blogwebimg.jpeg";
 import img_gallery from "../public/assets/img_gallery.jpeg";
 import petabyte from "../public/assets/pesports.jpg";
 import stepper from "../public/assets/edus.jpg";
+import abs from "../public/assets/eduabs.jpg";
 import comform from "../public/assets/comform.jpeg";
 import portfolio from "../public/assets/portfolio.jpeg";
 
@@ -25,22 +26,66 @@ const Projects = (props: Props) => {
       <div className="mt-20 md:w-9/12 mx-auto ">
         <Image
           className="rounded-xl opacity-90 hover:opacity-100"
+          src={abs}
+          alt="image_gallery"
+        />
+
+        <div className="my-10 sm:w-10/12 mx-auto">
+          <h1 className="text-2xl font-bold mb-4">
+            Edustipend Ambassadors' Page
+          </h1>
+          <div className="text-neutral-300">
+            <h1 className="mt-4">
+              {" "}
+              I developed the Edustipend Ambassadors' Page, a web platform
+              intended to partner with Leaders who are looking to create an
+              impact in their communities, and dynamically showcasing past
+              Ambassadors and their impacts.
+            </h1>
+            <h1 className="mt-4">
+              Implemented using HTML, Vanilla CSS, and JavaScript (React.js),
+              while integrating Google Forms for streamlined application
+              processes.
+            </h1>
+          </div>
+
+          <div className="mt-6 inline-block">
+            <a
+              href="https://edustipend.org/ambassador-program"
+              target="_blank"
+              className="flex items-center px-4 py-1 border-[0.5px] border-slate-500 rounded-3xl bg-neutral-800 hover:bg-neutral-700"
+            >
+              Explore <BsArrowUpRight size={14} className="ml-2" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-20 md:w-9/12 mx-auto ">
+        <Image
+          className="rounded-xl opacity-90 hover:opacity-100"
           src={stepper}
           alt="image_gallery"
         />
 
         <div className="my-10 sm:w-10/12 mx-auto">
-          <h1 className="text-2xl font-bold mb-4">Request Stipend Milti-step Form</h1>
+          <h1 className="text-2xl font-bold mb-4">
+            Request Stipend Milti-step Form
+          </h1>
           <div className="text-neutral-300">
             <h1 className="mt-4">
               {" "}
-              I developed a stepper component for a Request Stipend Feature for users to request a stipend, streamlining the application process for users. The stepper guided users through a multi-step form, ensuring a seamless and error-free experience.
-              
-              Implemented the component using HTML, CSS, and JavaScript (React.js).
+              I developed a stepper component for a Request Stipend Feature for
+              users to request a stipend, streamlining the application process
+              for users. The stepper guided users through a multi-step form,
+              ensuring a seamless and error-free experience. Implemented the
+              component using HTML, CSS, and JavaScript (React.js).
             </h1>
             <h1 className="mt-4">
               {" "}
-              I collaborated with fellow developers to create the Edustipend Home Page where I developed the How It Works, Our Beneficiaries and Take Off Burden Sections.
+              I collaborated with fellow developers to create the Edustipend
+              Home Page where I developed the How It Works, Our Beneficiaries
+              and Take Off Burden Sections.
             </h1>
           </div>
 
