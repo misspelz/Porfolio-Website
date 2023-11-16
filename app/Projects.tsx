@@ -32,21 +32,21 @@ const Projects = (props: Props) => {
 
         <div className="my-10 sm:w-10/12 mx-auto">
           <h1 className="text-2xl font-bold mb-4">
-            Edustipend Ambassadors' Page
+            Edustipend Ambassadors&apos; Page
           </h1>
           <div className="text-neutral-300">
             <h1 className="mt-4">
               {" "}
-              I developed the Edustipend Ambassadors' Page, a web platform
+              I developed the Edustipend Ambassadors&apos; Page, a web platform
               intended to partner with Leaders who are looking to create an
               impact in their communities, and dynamically showcasing past
               Ambassadors and their impacts.
             </h1>
-            <h1 className="mt-4">
+            <h3 className="mt-4">
               Implemented using HTML, Vanilla CSS, and JavaScript (React.js),
               while integrating Google Forms for streamlined application
               processes.
-            </h1>
+            </h3>
           </div>
 
           <div className="mt-6 inline-block">
@@ -73,14 +73,14 @@ const Projects = (props: Props) => {
             Request Stipend Milti-step Form
           </h1>
           <div className="text-neutral-300">
-            <h1 className="mt-4">
+            <h3 className="mt-4">
               {" "}
               I developed a stepper component for a Request Stipend Feature for
               users to request a stipend, streamlining the application process
               for users. The stepper guided users through a multi-step form,
               ensuring a seamless and error-free experience. Implemented the
               component using HTML, CSS, and JavaScript (React.js).
-            </h1>
+            </h3>
             <h1 className="mt-4">
               {" "}
               I collaborated with fellow developers to create the Edustipend
@@ -110,11 +110,11 @@ const Projects = (props: Props) => {
         <div className="my-10 sm:w-10/12 mx-auto">
           <h1 className="text-2xl font-bold mb-4">Petabye ESports</h1>
           <div className="text-neutral-300">
-            <h1 className="mt-4">
+            <h3 className="mt-4">
               {" "}
               This platform is being developed with the MERN Stack where I focus
               on React.js for building the User Interface.
-            </h1>
+            </h3>
           </div>
 
           <div className="mt-6 inline-block">
@@ -140,11 +140,11 @@ const Projects = (props: Props) => {
           <div className="text-neutral-300">
             With an image gallery, you can view a collection of pictures in one
             place on a page.{" "}
-            <h1 className="mt-4">
+            <h3 className="mt-4">
               {" "}
               This platform was developed with React.js, Tailwind CSS, and it
               utilizes real-time data fetching from the Pixabay API.
-            </h1>
+            </h3>
           </div>
 
           <div className="mt-6 inline-block">
@@ -170,11 +170,11 @@ const Projects = (props: Props) => {
           <div className="text-neutral-300">
             A blog website developed with React and Tailwind CSS where a user is
             able to Create, Read, Update, and Delete posts.{" "}
-            <h1 className="mt-4">
+            <h3 className="mt-4">
               {" "}
               In addition, this platform has a store page to order Books with
               Flutterwave payment gateway.
-            </h1>
+            </h3>
           </div>
           <div className="mt-6 inline-block">
             <a
@@ -191,11 +191,11 @@ const Projects = (props: Props) => {
         <div className="my-10 sm:w-10/12 mx-auto">
           <h1 className="text-2xl font-bold mb-4">Customer Complaint Form</h1>
           <div className="text-neutral-300">
-            <h1>
+            <h3>
               The form is built with React.js. It utilizes Tailwind CSS for
               styling and React Toastify for pop up notification which enables
               user-friendly experiences.
-            </h1>
+            </h3>
           </div>
           <div className="mt-6 inline-block">
             <a
@@ -212,10 +212,10 @@ const Projects = (props: Props) => {
         <div className="my-10 sm:w-10/12 mx-auto">
           <h1 className="text-2xl font-bold mb-4">Portfolio Website</h1>
           <div className="text-neutral-300">
-            <h1>
+            <h3>
               The website was built with HTML5 and JavaScript. It utilizes CSS3
               for styling and Animate on Scroll (AOS) for animations.
-            </h1>
+            </h3>
           </div>
           <div className="mt-6 inline-block">
             <a
