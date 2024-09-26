@@ -7,10 +7,14 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import abs from "../public/assets/eduabs.jpg";
-import bodyfix from "../public/assets/bodyfix.jpeg";
+import abs from "../public/assets/edu.png";
+import pf from "../public/assets/pf.png";
+import bmc from "../public/assets/bmc.png";
+import gdm from "../public/assets/gdm.png";
 import stepper from "../public/assets/edus.jpg";
 import petabyte from "../public/assets/pesports.jpg";
+import phs from "../public/assets/phs.png";
+import sch from "../public/assets/sch.png";
 import img_gallery from "../public/assets/img_gallery.jpeg";
 import blogwebimg from "../public/assets/blogwebimg.jpeg";
 import comform from "../public/assets/comform.jpeg";
@@ -45,60 +49,54 @@ const Projects = () => {
 
   const projectData = [
     {
-      image: bodyfix,
-      title: "Body Fix",
-      description:
-        "🏋️‍♂️ A sleek fitness/gym website powered by TypeScript/React, Framer Motion for animations, Tailwind CSS for styling, Tailwind Heroicons for Icons, and Unsplash for free images",
-      link: "https://body-fix.vercel.app/",
-    },
-    {
       image: abs,
-      title: "Ambassadors' Page",
+      title: "Edustipend",
       description:
-        "A web platform intended to partner with Leaders who are looking to create an impact in their communities.",
-      link: "https://edustipend.org/ambassador-program",
-    },
-    {
-      image: stepper,
-      title: "Multi-step Form",
-      description:
-        "A Request Stipend Feature for users to request a stipend, streamlining the application process for users.",
+        "Empowers learners by providing essential resources. Edustipend aims to create opportunities that drive educational growth and community impact.",
       link: "https://edustipend.org",
     },
     {
-      image: petabyte,
-      title: "Petabyte ESports",
+      image: gdm,
+      title: "Great Day Motors",
       description:
-        "This platform is being developed with the MERN Stack where I focus on React.js for building the User Interface.",
-      link: "https://pesports.gg",
+        "Offers reliable and comfortable rides. Great Day Motors ensures a smooth and affordable journey with a commitment to safety and customer satisfaction.",
+      link: "https://www.greatdaymotors.com/",
+    },
+    {
+      image: bmc,
+      title: "Blue Marvel Group",
+      description:
+        "Committed to delivering innovative solutions through our Capital, Management, and Technology divisions, empowering businesses and individuals.",
+      link: "https://bluemarvelgroup.com/",
+    },
+
+    {
+      image: sch,
+      title: "Schollarr",
+      description:
+        "Go-to platform for all things study abroad, service providers, faculties, and universities all in one place to help make your academic dreams a reality.",
+      link: "https://www.schollarr.com/",
+    },
+    {
+      image: phs,
+      title: "Prince Handyman Service",
+      description:
+        "Your go-to solution for all home repairs and maintenance needs. From fixing leaks to electrical work and everything in between.",
+      link: "https://princehandymanservice.vercel.app/",
     },
     {
       image: img_gallery,
       title: "Image Gallery",
       description:
-        "A collection of pictures in one place on a page. it utilizes real-time data fetching from the Pixabay API.",
+        "A collection of captivating images pictures in one place on a page. it utilizes real-time data fetching from the Pixabay API.",
       link: "https://image-gallery-usingreact.netlify.app/",
     },
     {
-      image: blogwebimg,
-      title: "Bloggit",
+      image: pf,
+      title: "My Porfolio",
       description:
-        "A user is able to Create, Read, Update, and Delete posts. In addition, a store page to order Books with Flutterwave payment gateway.",
-      link: "https://bloggit.netlify.app/",
-    },
-    {
-      image: comform,
-      title: "Customer Complaint Form",
-      description:
-        "The form is built with React.js. It utilizes Tailwind CSS for styling and React Toastify for pop-up notification which enables user-friendly experiences.",
-      link: "https://customercomplaintform.netlify.app/",
-    },
-    {
-      image: portfolio,
-      title: "Portfolio Website",
-      description:
-        "The website was built with HTML5 and JavaScript. It utilizes CSS3 for styling and Animate on Scroll (AOS) for animations.",
-      link: "https://portfolio-oluwapelumi.netlify.app/",
+        "From innovative applications to visually appealing designs, this portfolio reflects my passion for building impactful digital solutions.",
+      link: "https://porfolio-pelumi-adetoye.vercel.app/",
     },
   ];
 
@@ -115,7 +113,7 @@ const Projects = () => {
         <Slider {...settings}>
           {projectData.map((project, index) => (
             <div key={index}>
-              <div className="my-10 sm:w-10/12 mx-auto">
+              <div className="my-10 md:w-10/12 mx-[10px] md:mx-auto">
                 <Image
                   className="rounded-xl opacity-90 hover:opacity-100 h-full"
                   src={project.image}
@@ -124,7 +122,7 @@ const Projects = () => {
                   height={300}
                 />
 
-                <div className="my-10 sm:w-10/12 mx-auto">
+                <div className="my-10 md:w-10/12 mx-auto">
                   <h1 className="text-2xl font-bold mb-4">{project.title}</h1>
                   <div className="text-neutral-300">
                     <h3 className="mt-4">{project.description}</h3>

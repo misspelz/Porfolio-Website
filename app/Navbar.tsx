@@ -22,7 +22,7 @@ const Navbar = (props: Props) => {
         <GiHamburgerMenu size={24} />
       </div>
       <nav
-        className={`max-sm:absolute max-sm:w-full left-0 transition ease-in duration-300 ${
+        className={`z-[999] max-sm:absolute max-sm:w-full left-0 transition ease-in duration-300 ${
           showNav ? "top-16 visible" : "max-sm:invisible top-0"
         }`}
       >
