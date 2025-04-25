@@ -11,7 +11,7 @@ export default function Home() {
       <Container />
       <div id="projects" className="box w-10/12 max-w-[1200px] mx-auto"></div>
       <Projects />
-      {/* Contact */}
+   
     </>
   );
 }

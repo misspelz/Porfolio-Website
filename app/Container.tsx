@@ -11,7 +11,7 @@ type Props = {};
 
 const Container = (props: Props) => {
   const [color, setColor] = useState("red");
-  const [text, setText] = useState("Front End Developer");
+  const [text, setText] = useState("Front End Engineer");
 
   // Timer function
   useEffect(() => {
@@ -20,9 +20,9 @@ const Container = (props: Props) => {
         prevColor === "#f7a025" ? "#7657a9" : "#f7a025"
       );
       setText((prevText) =>
-        prevText === "Front End Developer!"
-          ? "Front End Developer"
-          : "Front End Developer"
+        prevText === "Front End Engineer!"
+          ? "Front End Engineer"
+          : "Front End Engineer"
       );
     }, 1000);
 
@@ -34,7 +34,7 @@ const Container = (props: Props) => {
 
   return (
     <div className="pt-4 relative w-10/12 max-w-[1200px] mx-auto">
-      <div className="md:flex items-center justify-between flex-row-reverse">
+      <div className="flex flex-col-reverse md:flex items-center justify-between md:flex-row-reverse">
         <div className=" flex justify-start lg:justify-center items-end max-md:pt-4 md:w-[50%]">
           <div className="relative">
             <Image
