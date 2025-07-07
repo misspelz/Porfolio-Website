@@ -72,14 +72,14 @@ const Container = (props: Props) => {
                   <AiOutlineTwitter size={24} />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://www.instagram.com/dev_pelz/"
                   className="hover:opacity-100 opacity-75 transition ease-in duration-150"
                 >
                   <GrInstagram size={24} />
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://www.linkedin.com/in/oluwapelumiadetoye/"
@@ -88,17 +88,17 @@ const Container = (props: Props) => {
                   <FaLinkedinIn size={24} />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://github.com/misspelz"
                   className="hover:opacity-100 opacity-75 transition ease-in duration-150"
                 >
                   <AiOutlineGithub size={24} />
                 </a>
-              </li>
+              </li> */}
             </ul>
             <a
-              href="mailto:pelumiiadetoye@gmail.com"
+              href="mailto:adetoyeofficial@gmail.com"
               className="px-4 py-[5px] whitespace-nowrap transition ease-in duration-150 bg-neutral-700 hover:bg-neutral-600 rounded-2xl border-[0.5px] border-[#363636]"
             >
               Email me
