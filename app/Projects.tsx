@@ -169,7 +169,7 @@ const Projects = () => {
         </Slider>
       </div>
 
-      <div className="mb-4  flex flex-row gap-10 w-full items-center max-w-[1200px] mx-auto">
+      {/* <div className="mb-4  flex flex-row gap-10 w-full items-center max-w-[1200px] mx-auto">
         <div className="h-[1px] bg-slate-500 hidden md:block  lg:w-[50%]"></div>
         <a
           href="https://github.com/misspelz"
@@ -178,7 +178,7 @@ const Projects = () => {
           Github <AiOutlineGithub size={24} />
         </a>
         <div className="h-[1px] bg-slate-500 lg:w-[50%] hidden md:block"></div>
-      </div>
+      </div> */}
     </div>
   );
 };
