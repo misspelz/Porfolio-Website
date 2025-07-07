@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
             }`}
           >
             <Link
-              href="https://docs.google.com/document/d/1jA2l3StIbzDNkNtgKBWB3VkozDbN-rHHaqb_xQyYzts/view?tab=t.w8jmu76wosnn"
+              href="https://docs.google.com/document/d/1jA2l3StIbzDNkNtgKBWB3VkozDbN-rHHaqb_xQyYzts/edit?tab=t.0"
               target="_blank"
               className="px-2 sm:text-xl"
               rel="noopener noreferrer"
