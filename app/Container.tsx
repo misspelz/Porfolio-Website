@@ -98,7 +98,7 @@ const Container = (props: Props) => {
               </li> */}
             </ul>
             <a
-              href="mailto:adetoyeofficial@gmail.com"
+              href="mailto:pelumiiadetoye@gmail.com"
               className="px-4 py-[5px] whitespace-nowrap transition ease-in duration-150 bg-neutral-700 hover:bg-neutral-600 rounded-2xl border-[0.5px] border-[#363636]"
             >
               Email me
