@@ -17,6 +17,7 @@ import bt from "../public/assets/betatenant.jpeg";
 import dc from "../public/assets/datacab.jpeg";
 import ol from "../public/assets/ourlady.jpeg";
 import te from "../public/assets/te.jpeg";
+import stasionpoint from "../public/assets/stasionpoint.jpeg";
 
 const Projects = () => {
   const settings = {
@@ -61,6 +62,13 @@ const Projects = () => {
       link: "https://edustipend.org",
     },
     {
+      image: stasionpoint,
+      title: "Stasion Point",
+      description:
+        "Professional Security at Your Fingertips. Stasion Point allows you search and book vetted bodyguards and bouncers near you in minutes",
+      link: "https://www.stasionpoint.com/",
+    },
+    {
       image: bt,
       title: "Beta Tenant",
       description:
@@ -102,7 +110,7 @@ const Projects = () => {
         "Committed to delivering innovative solutions through our Capital, Management, and Technology divisions, empowering businesses and individuals.",
       link: "https://bluemarvelgroup.com/",
     },
-    
+
     {
       image: phs,
       title: "Prince Handyman Service",
