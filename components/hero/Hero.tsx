@@ -1,15 +1,13 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { AiOutlineTwitter, AiOutlineGithub } from "react-icons/ai";
-import { GrInstagram } from "react-icons/gr";
-import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import myimg from "../public/assets/Adetoye_A._Pelumi-removebg-preview.png";
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import myimg from "@/public/assets/Adetoye_A._Pelumi-removebg-preview.png";
 
 type Props = {};
 
-const Container = (props: Props) => {
+const Hero = (props: Props) => {
   const [color, setColor] = useState("red");
   const [text, setText] = useState("Front End Engineer");
 
@@ -33,10 +31,10 @@ const Container = (props: Props) => {
   }, []);
 
   return (
-    <div className="pt-4 relative w-10/12 max-w-[1200px] mx-auto">
-      <div className="flex flex-col-reverse md:flex items-center justify-between md:flex-row-reverse">
-        <div className=" flex justify-start lg:justify-center items-end max-md:pt-4 md:w-[50%]">
-          <div className="relative">
+    <div className="pt-24 relative w-10/12 max-w-[1200px] mx-auto">
+  <div className="flex flex-col-reverse md:flex md:items-center md:justify-between md:flex-row-reverse">
+    <div className="md:w-1/2 flex justify-start lg:justify-center items-end max-md:pt-4">
+      <div className="relative">
             <Image
               className="h-[500px] transform -scale-x-100"
               src={myimg}
@@ -66,7 +64,7 @@ const Container = (props: Props) => {
             <ul className="flex items-center space-x-2 sm:space-x-5 mr-6 my-4 ">
               <li>
                 <a
-                  href="https://twitter.com/Dev_Pelz"
+                  href="https://x.com/dev_pelz"
                   className="hover:opacity-100 opacity-75 transition ease-in duration-150"
                 >
                   <AiOutlineTwitter size={24} />
@@ -98,7 +96,7 @@ const Container = (props: Props) => {
               </li> */}
             </ul>
             <a
-              href="mailto:pelumiiadetoye@gmail.com"
+              href="mailto:adetoyeofficial@gmail.com"
               className="px-4 py-[5px] whitespace-nowrap transition ease-in duration-150 bg-neutral-700 hover:bg-neutral-600 rounded-2xl border-[0.5px] border-[#363636]"
             >
               Email me
@@ -110,4 +108,4 @@ const Container = (props: Props) => {
   );
 };
 
-export default Container;
+export default Hero;
