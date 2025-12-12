@@ -13,7 +13,7 @@ import {
   SiTailwindcss,
   SiTestinglibrary,
   SiTypescript,
-  SiZeromq
+  SiZeromq,
 } from "react-icons/si";
 
 const skills = [
@@ -31,13 +31,12 @@ const skills = [
   { name: "React Testing Library", icon: <SiTestinglibrary /> },
   { name: "Storybook", icon: <SiStorybook /> },
   { name: "Git & GitHub", icon: <FaGithub /> },
-  { name: "AI Assistant", icon: <FaRobot /> }
-
+  { name: "AI Assistant", icon: <FaRobot /> },
 ];
 
 const Skills = () => {
   return (
-    <div id="skills" className=" mt-20">
+    <div id="skills" className="w-10/12 max-w-[1200px] mx-auto">
       <div className="flex flex-col gap-4 w-[90%] lg:w-[70%] mx-auto justify-center items-center">
         <h1 className=" text-3xl font-bold">Technical Skills</h1>
       </div>
@@ -48,7 +47,9 @@ const Skills = () => {
             className="flex flex-col items-center justify-center p-6 rounded-2xl text-white shadow-lg hover:scale-105 transform transition duration-300"
           >
             <div className="text-2xl lg:text-4xl mb-3">{skill.icon}</div>
-            <p className="text-sm lg:text-md font-semibold text-center">{skill.name}</p>
+            <p className="text-sm lg:text-md font-semibold text-center">
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>

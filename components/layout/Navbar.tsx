@@ -28,7 +28,9 @@ const Navbar = (props: Props) => {
   return (
     <div
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "backdrop-blur-md bg-neutral-900/70 border-b border-neutral-500" : ""
+        scrolled
+          ? "backdrop-blur-md bg-neutral-900/70 border-b border-neutral-500"
+          : ""
       }`}
     >
       {/* Overlay when nav is open */}
@@ -67,6 +69,14 @@ const Navbar = (props: Props) => {
           </li>
           <li>
             <Link
+              href="#skills"
+              className="hover:text-[#f7a025] transition-colors text-lg"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
               href="#projects"
               className="hover:text-[#f7a025] transition-colors text-lg"
             >
@@ -88,7 +98,9 @@ const Navbar = (props: Props) => {
         {/* Mobile navigation */}
         <nav
           className={`sm:hidden absolute left-0 w-full bg-neutral-900 transition-all duration-300 ease-in-out z-40 ${
-            showNav ? "top-16 opacity-100" : "top-0 opacity-0 pointer-events-none"
+            showNav
+              ? "top-16 opacity-100"
+              : "top-0 opacity-0 pointer-events-none"
           }`}
         >
           <ul className="flex flex-col items-center space-y-4 py-6">
@@ -105,6 +117,19 @@ const Navbar = (props: Props) => {
                 onClick={() => setShowNav(false)}
               >
                 Resume
+              </Link>
+            </li>
+            <li
+              className={`transition-transform duration-300 delay-100 ${
+                showNav ? "translate-x-0" : "-translate-x-40"
+              }`}
+            >
+              <Link
+                href="#skills"
+                className="px-4 py-2 hover:bg-[#f7a025] rounded"
+                onClick={() => setShowNav(false)}
+              >
+                Skills
               </Link>
             </li>
             <li

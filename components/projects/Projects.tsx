@@ -97,7 +97,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="mt-20 md:w-[90%] mx-auto ">
+      <div className="mt-20 w-10/12 max-w-[1200px] mx-auto ">
         <Slider {...settings}>
           {projectData.map((project, index) => (
             <div key={index}>

@@ -32,9 +32,9 @@ const Hero = (props: Props) => {
 
   return (
     <div className="pt-24 relative w-10/12 max-w-[1200px] mx-auto">
-  <div className="flex flex-col-reverse md:flex md:items-center md:justify-between md:flex-row-reverse">
-    <div className="md:w-1/2 flex justify-start lg:justify-center items-end max-md:pt-4">
-      <div className="relative">
+      <div className="flex flex-col-reverse md:flex md:items-center md:justify-between md:flex-row-reverse">
+        <div className="md:w-1/2 flex justify-start lg:justify-center items-end max-md:pt-4">
+          <div className="relative">
             <Image
               className="h-[500px] transform -scale-x-100"
               src={myimg}
@@ -45,9 +45,9 @@ const Hero = (props: Props) => {
         </div>
         <div className="md:w-[50%] p-4 pl-0 mt-5 sm:mt-20">
           {/* <Link href="/newpage"> */}
-            <p className="text-xl sm:text-2xl  md:text-xl lg:text-2xl xl:text-3xl">
-              Hi, call me Pelz
-            </p>
+          <p className="text-xl sm:text-2xl  md:text-xl lg:text-2xl xl:text-3xl">
+            Hi, call me Pelz
+          </p>
           {/* </Link> */}
           <p className="text-base sm:text-xl md:text-base lg:text-xl xl:text-2xl lg:pt-6 py-4">
             As a <span style={{ color: color }}>{text}</span>, my approach to
