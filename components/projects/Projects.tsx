@@ -88,7 +88,7 @@ const Projects = () => {
   return (
     <div className="w-10/12 mx-auto lg:flex lg:flex-col lg:items-center ">
       <div className="flex flex-col gap-4 w-[90%] lg:w-[70%] mx-auto justify-center items-center">
-        <h1 className="md:text-4xl text-3xl  font-bold">Projects</h1>
+        <h1 className=" text-3xl  font-bold">Projects</h1>
         <p className="pt-6 text-neutral-300 max-w-[1200px] mx-auto text-center">
           I actively develop web applications, solving problems and tackling
           projects ranging from one-page sites to comprehensive multi-page
